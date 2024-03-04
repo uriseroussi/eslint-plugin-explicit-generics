@@ -1,0 +1,6 @@
+tsconfig.json
+tsconfig.tsbuildinfo
+package-lock.json
+/src
+/node_modules
+/.github

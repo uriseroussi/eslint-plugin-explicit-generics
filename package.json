@@ -1,0 +1,31 @@
+{
+  "name": "eslint-plugin-explicit-generics",
+  "version": "1.0.5",
+  "description": "ESLint rule for enforcing input of generics to specific functions",
+  "author": "Uri Seroussi",
+  "license": "ISC",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uriseroussi/eslint-plugin-explicit-generics"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.1.0",
+    "vitest": "^1.3.1",
+    "@typescript-eslint/rule-tester": "^7.1.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^7.1.0"
+  }
+}
