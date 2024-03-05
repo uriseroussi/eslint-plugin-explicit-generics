@@ -18,7 +18,7 @@ Add the plugin and provide the names of the functions you wish to enforce explic
   "parser": "@typescript-eslint/parser",
   "plugins": ["explicit-generics"],
   "rules": {
-    "explicit-generics/explicit-generics": ["error", "functionaName1", "functionName2"]
+    "explicit-generics/explicit-generics": ["error", { functionNames: ["functionName1", "functionName2"] }]
   }
   ...
 ```
@@ -42,7 +42,7 @@ Now we want ESLint to force us to input the generics on each function call
   "parser": "@typescript-eslint/parser",
   "plugins": ["explicit-generics"],
   "rules": {
-    "explicit-generics/explicit-generics": ["error", "foo"]
+    "explicit-generics/explicit-generics": ["error", {functionNames: ["foo"]}]
   }
 ...
 ```
@@ -52,7 +52,7 @@ This will give these linting results
 ```
 // Invalid:
 
-foo(arg) // error  Should include generics in function call
+foo(arg) // error  'foo' should include generics in function call
 
 
 // Valid:

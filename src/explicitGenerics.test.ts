@@ -15,22 +15,22 @@ ruleTester.run('explicit-generics', explicitGenerics, {
   valid: [
     {
       code: 'foo<number>();',
-      options: ['foo'],
+      options: [{ functionNames: ['foo'] }],
     },
     {
       code: 'bar<string, number>();',
-      options: ['bar'],
+      options: [{ functionNames: ['bar'] }],
     },
   ],
   invalid: [
     {
       code: 'foo();',
-      options: ['foo'],
+      options: [{ functionNames: ['foo'] }],
       errors: [{ messageId: 'default' }],
     },
     {
       code: 'bar();',
-      options: ['bar'],
+      options: [{ functionNames: ['bar'] }],
       errors: [{ messageId: 'default' }],
     },
   ],
