@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-explicit-generics",
-  "version": "1.0.5",
+  "version": "2.0.5",
   "description": "ESLint rule for enforcing input of generics to specific functions",
   "author": "Uri Seroussi",
   "license": "ISC",
